@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["dom", "ESNext"],
+    "typeRoots": ["@types", "node_modules/@types"],
+    "paths": {
+      "@common/*": ["./packages/common/*"]
+    },
+    "allowJs": false,
+    "noImplicitAny": false,
+    "skipLibCheck": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    // "declaration": true,
+    // "emitDeclarationOnly": true,
+    "downlevelIteration": true
+  }
+}

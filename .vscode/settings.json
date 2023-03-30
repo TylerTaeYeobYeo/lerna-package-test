@@ -1,0 +1,10 @@
+{
+  "editor.tabSize": 2,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "search.exclude": {
+    "**/node_modules": true
+  },
+  "prettier.ignorePath": ".prettierignore"
+}

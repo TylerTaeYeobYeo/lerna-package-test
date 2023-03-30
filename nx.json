@@ -1,0 +1,43 @@
+{
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["dev"],
+        "accessToken": "ODZiZTg1NmItMWY5MS00YmQxLTliNTEtZmY0NDdmM2QyOTI1fHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "defaultBase": "dev",
+  "namedInputs": {
+    "all": ["{projectRoot}/**/*"],
+    "public": [
+      "!{projectRoot}/public/**/*.test.*",
+      "!{projectRoot}/public/**/*.stories.*",
+      "!{projectRoot}/public/**/*.spec.*",
+      "!{projectRoot}/public/"
+    ]
+  },
+  "targetDefaults": {
+    "dev": {
+      "dependsOn": ["^dev"],
+      "inputs": ["public", "^public"]
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["public", "^public"]
+    },
+    "build:dev": {
+      "dependsOn": ["^build:dev"],
+      "inputs": ["public", "^public"]
+    },
+    "tsc": {
+      "dependsOn": ["^tsc"],
+      "inputs": ["public", "^public"]
+    },
+    "dts:bundle": {
+      "dependsOn": ["^build", "^dts:bundle"],
+      "inputs": ["public", "^public"]
+    }
+  }
+}

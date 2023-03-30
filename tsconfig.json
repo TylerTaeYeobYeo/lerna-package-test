@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    // "baseUrl": "./packages",
+    "baseUrl": ".",
+    "paths": {
+      "/*": ["@types"],
+      "./packages/@liveconnect-sdk/*": ["*/src"]
+    }
+  }
+}
