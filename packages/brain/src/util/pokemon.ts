@@ -1,4 +1,4 @@
-import Subject from '@tyeo-test/subject'
+import Subject from '@tyeo/subject'
 
 export interface Pokemon {
   name: string

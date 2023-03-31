@@ -1,6 +1,5 @@
 {
-  "name": "@tyeo-test/subject",
-  "private": true,
+  "name": "@tyeo/subject",
   "version": "0.0.1-alpha.0",
   "type": "module",
   "main": "dist/subject.js",
