@@ -3,7 +3,6 @@ export type UnsubscribeFn = () => void
 
 export default class Subject<T> {
   private _subscribers: SubscribeFn<T>[] = []
-  constructor() {}
 
   publish(data: T) {
     this._subscribers.forEach(subscriber => subscriber(data))
@@ -16,5 +15,9 @@ export default class Subject<T> {
         subscriber => subscriber !== fn,
       )
     }
+  }
+
+  test() {
+    console.log('test')
   }
 }
