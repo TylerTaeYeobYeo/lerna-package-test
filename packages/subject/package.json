@@ -1,0 +1,24 @@
+{
+  "name": "@liveconnect-test/subject",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/subject.js",
+  "types": "dist/subject.d.ts",
+  "scripts": {
+    "dev": "vite -- BUILD_MODE=dev",
+    "build": "vite build -- BUILD_MODE=build && yarn dts:bundle",
+    "build:dev": "vite build -- BUILD_MODE=build:dev && tsc",
+    "tsc": "tsc",
+    "dts:bundle": "../../node_modules/.bin/dts-bundle-generator -o ./dist/subject.d.ts ./src/index.ts"
+  },
+  "dependencies": {
+    "cash-dom": "^8.1.4",
+    "cross-fetch": "^3.1.5",
+    "lodash": "^4.17.21",
+    "ts-custom-error": "^3.3.1"
+  },
+  "devDependencies": {
+    "vite": "^4.2.0"
+  }
+}

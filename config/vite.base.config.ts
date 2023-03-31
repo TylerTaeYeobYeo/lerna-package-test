@@ -61,17 +61,12 @@ export default (
         lib: {
           name: process.env.npm_package_name,
           formats: ['es', 'cjs', 'umd'],
-          fileName: `liveconnect.${name}`,
+          fileName: `${name}`,
           entry,
         },
       },
       resolve: {
-        alias: [
-          {
-            find: '@common',
-            replacement: `${ROOT_PATH}/packages/common`,
-          },
-        ],
+        alias: [],
       },
     },
     params: {

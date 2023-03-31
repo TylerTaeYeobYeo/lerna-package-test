@@ -1,13 +1,23 @@
 {
-  "name": "npm-test",
+  "name": "liveconnect-test",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "lerna run build --stream",
+    "build:brain": "lerna run build --stream --scope=@liveconnect-test/brain",
+    "build:subject": "lerna run build --stream --scope=@liveconnect-test/subject",
+    "refresh": "yarn clean && yarn install && yarn unlink && yarn bootstrap && yarn link",
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean --yes",
+    "link": "lerna link convert"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.55.0",

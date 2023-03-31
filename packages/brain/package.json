@@ -1,0 +1,25 @@
+{
+  "name": "@liveconnect-test/brain",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/brain.js",
+  "types": "dist/brain.d.ts",
+  "scripts": {
+    "dev": "vite -- BUILD_MODE=dev",
+    "build": "vite build -- BUILD_MODE=build && yarn dts:bundle",
+    "build:dev": "vite build -- BUILD_MODE=build:dev && tsc",
+    "tsc": "tsc",
+    "dts:bundle": "../../node_modules/.bin/dts-bundle-generator -o ./dist/brain.d.ts ./src/index.ts"
+  },
+  "dependencies": {
+    "cash-dom": "^8.1.4",
+    "cross-fetch": "^3.1.5",
+    "ts-custom-error": "^3.3.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "vite": "^4.2.0",
+    "@types/lodash": "^4.0.0"
+  }
+}

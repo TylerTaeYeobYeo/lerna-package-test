@@ -3,9 +3,7 @@
     "target": "ESNext",
     "lib": ["dom", "ESNext"],
     "typeRoots": ["@types", "node_modules/@types"],
-    "paths": {
-      "@common/*": ["./packages/common/*"]
-    },
+    "paths": {},
     "allowJs": false,
     "noImplicitAny": false,
     "skipLibCheck": false,
