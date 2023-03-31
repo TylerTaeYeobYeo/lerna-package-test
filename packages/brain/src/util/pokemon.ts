@@ -1,8 +1,10 @@
-// import { Subject } from '@npm-test/subject'
+import Subject from '@liveconnect-test/subject'
 
-// export interface Pokemon {
-//   name: string
-//   skill: [string, string, string, string]
-// }
+export interface Pokemon {
+  name: string
+  skill: [string, string, string, string]
+}
 
-// const pokemonSubject = new Subject<Pokemon>()
+export const pokemonSubject = new Subject<Pokemon>()
+
+export default pokemonSubject

@@ -1,18 +1,4 @@
-import _ from 'lodash'
+import Brain from './util/brain'
+import { Pokemon } from './util/pokemon'
 
-export default class Brain<T = any> {
-  private _state = {}
-  constructor() {}
-
-  get allData() {
-    return _.cloneDeep(this._state)
-  }
-
-  getData(id: string): T {
-    return _.cloneDeep(this._state[id])
-  }
-
-  setData(id: string, data: T) {
-    this._state[id] = data
-  }
-}
+export const PokemonDB = new Brain<Pokemon>()
