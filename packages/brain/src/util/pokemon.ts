@@ -1,4 +1,4 @@
-import Subject from '@liveconnect-test/subject'
+import Subject from '@tyeo-test/subject'
 
 export interface Pokemon {
   name: string

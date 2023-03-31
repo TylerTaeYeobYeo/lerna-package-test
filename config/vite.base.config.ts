@@ -35,7 +35,7 @@ const ENV_BUILD_CONFIG = {
   },
 }
 
-export interface LiveconnectSDKViteBaseConfig {
+export interface tyeoSDKViteBaseConfig {
   config: UserConfigExport
   params: { rootPath: string }
 }
@@ -44,7 +44,7 @@ export default (
   params: ConfigEnv,
   name: string,
   entry: string,
-): LiveconnectSDKViteBaseConfig => {
+): tyeoSDKViteBaseConfig => {
   const { mode } = params
   const buildMode = getValueFromNpmScriptArgs(process.argv, 'BUILD_MODE')
   const targetConfig = ENV_BUILD_CONFIG[buildMode].build ?? {}

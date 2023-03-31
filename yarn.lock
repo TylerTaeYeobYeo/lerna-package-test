@@ -302,7 +302,7 @@
     write-pkg "4.0.0"
     yargs "16.2.0"
 
-"@liveconnect-test/brain@file:packages/brain":
+"@tyeo-test/brain@file:packages/brain":
   version "0.0.0"
   dependencies:
     cash-dom "^8.1.4"
@@ -310,7 +310,7 @@
     lodash "^4.17.21"
     ts-custom-error "^3.3.1"
 
-"@liveconnect-test/subject@file:packages/subject":
+"@tyeo-test/subject@file:packages/subject":
   version "0.0.0"
   dependencies:
     cash-dom "^8.1.4"

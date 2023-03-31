@@ -1,5 +1,5 @@
 {
-  "name": "liveconnect-test",
+  "name": "tyeo-test",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -8,8 +8,8 @@
   "description": "",
   "scripts": {
     "build": "lerna run build --stream",
-    "build:brain": "lerna run build --stream --scope=@liveconnect-test/brain",
-    "build:subject": "lerna run build --stream --scope=@liveconnect-test/subject",
+    "build:brain": "lerna run build --stream --scope=@tyeo-test/brain",
+    "build:subject": "lerna run build --stream --scope=@tyeo-test/subject",
     "refresh": "yarn clean && yarn install && yarn unlink && yarn bootstrap && yarn llink",
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean --yes",
@@ -18,8 +18,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@liveconnect-test/brain": "file:packages\\brain",
-    "@liveconnect-test/subject": "file:packages\\subject"
+    "@tyeo-test/brain": "file:packages\\brain",
+    "@tyeo-test/subject": "file:packages\\subject"
   },
   "devDependencies": {
     "@nrwl/nx-cloud": "latest",
