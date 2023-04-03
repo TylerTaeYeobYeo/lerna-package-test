@@ -13,7 +13,7 @@
     "dts:bundle": "../../node_modules/.bin/dts-bundle-generator -o ./dist/brain.d.ts ./src/index.ts"
   },
   "dependencies": {
-    "@tyeo/subject": "^0.0.2-alpha.0",
+    "@tyeo/subject": "*",
     "cash-dom": "^8.1.4",
     "cross-fetch": "^3.1.5",
     "lodash": "^4.17.21",

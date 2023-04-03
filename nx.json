@@ -3,7 +3,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["dev"],
+        "cacheableOperations": ["build", "dts:bundle"],
         "accessToken": "ODZiZTg1NmItMWY5MS00YmQxLTliNTEtZmY0NDdmM2QyOTI1fHJlYWQtd3JpdGU="
       }
     }
