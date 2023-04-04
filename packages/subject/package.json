@@ -1,6 +1,6 @@
 {
   "name": "@tyeo/subject",
-  "version": "0.0.3-alpha.0",
+  "version": "0.0.3",
   "type": "module",
   "main": "dist/subject.js",
   "types": "dist/subject.d.ts",
