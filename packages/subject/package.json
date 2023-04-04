@@ -4,6 +4,9 @@
   "type": "module",
   "main": "dist/subject.js",
   "types": "dist/subject.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite -- BUILD_MODE=dev",
     "build": "vite build -- BUILD_MODE=build && yarn dts:bundle",

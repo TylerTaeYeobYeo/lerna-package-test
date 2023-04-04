@@ -13,7 +13,8 @@
     "refresh": "yarn clean && yarn install && yarn unlink && yarn bootstrap && yarn llink",
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean --yes",
-    "llink": "lerna link"
+    "llink": "lerna link",
+    "lpub": "lerna publish --no-private"
   },
   "author": "",
   "license": "ISC",

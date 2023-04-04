@@ -1,10 +1,12 @@
 {
   "name": "@tyeo/brain",
-  "private": true,
   "version": "0.0.2-alpha.0",
   "type": "module",
   "main": "dist/brain.js",
   "types": "dist/brain.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite -- BUILD_MODE=dev",
     "build": "vite build -- BUILD_MODE=build && yarn dts:bundle",
@@ -18,5 +20,8 @@
     "cross-fetch": "^3.1.5",
     "lodash": "^4.17.21",
     "ts-custom-error": "^3.3.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
